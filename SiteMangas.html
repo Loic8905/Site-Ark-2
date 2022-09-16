@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Mangas et jeux</title>
+    </head>
+    <body>
+        <div id="Bloc_Page">
+            <header>
+                <div id="titre_site">
+                    <h1>Les Démons de l'arche II</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="Géneral.html">Géneral</a></li>
+                        <li><a href="#">Camp de base</a></li>
+                        <li><a href="#">Boutique</a></li>
+                        <li><a href="#">Communauté</a></li>
+                        <li><a href="#">Télechargement</a></li>
+                        <li><a href="#">Service Client</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="touslesbloc">
+                <video id="videoArk" controls poster="/images/FondArk.jpg"  loop><!--autoplay pour lancer direct/muted rendre muet la video/loop pour lancer en boucle la video-->
+                    <source id="video"  src="video/ARK 2 Trailer.mp4"  type="video/mp4" preload="none" >
+                </video>
+                <div class="bannierejouer">
+                    <h2>La véritable aventure commence ici</h2>
+                    <h3>De la survie de haut niveau !</h3>
+                    <a href="https://store.steampowered.com/app/2050420/ARK_2/"><input  type="button"  id="boutonbanniere" name="jouermaintenant" value="Jouer maintenant"></a>
+                    <div id="pegi"><img src="images/pegi.png"/></div>
+                </div>
+                
+            </section>
+            <section class="touslesbloc" id="bloclien">
+                        <div class="lienark">
+                            <img src="images/logo.jpg" alt="Logo du site ark officielle"  class="logo" /><!--Alt description de se que c'est pour sourd muet-->
+                            <a href="https://ark-france.fr/" title="Origine">ARK: Survival Evolved</a>
+                        </div>
+                        <div class="lienark">
+                            <img src="images/images.jpg" alt="Logo du Wiki Ark"  class="logo" />
+                            <a href="https://ark.fandom.com/fr/wiki/ARK:_Survival_Evolved" title="Le Savoir">Wiki Ark title</a>
+                        </div>
+            </section>
+            <form method="post" action="traitement.php"><!--methode php pour traiter les donner a voir plus tard-->
+                <p>
+                    <label for="pseudo">Votre Pseudo</label><!--nom pour ce qui va etre taper dans le input-->
+                    <input type="text" name="pseudo" id="pseudo" maxlength="12" placeholder="All Migth" /><!--maxlength limite le nombre de caratere pouvant etre taper/PlaceHolder pour auto ecrire dans le input en griser-->
+                    <input type="email" name="email" placeholder="Votre EMail"/>
+                    <input type="password" name="password" placeholder="Votre Mot De Passe"/><!--crer input de mot de passe-->
+                    <input type="submit" value="Envoyer" />
+                  <!--<textarea></textarea>--><!--Crer une zone pour ecrire tout un commentaire texte-->
+                </p>
+            </form>
+            <footer>
+                <p>Ne pas reproduire site sous au Commandemande de protection des fuites</p>
+            </footer>
+        </div>
+    </body>
+</html>
